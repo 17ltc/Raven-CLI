@@ -1,0 +1,31 @@
+[project]
+name = "raven"
+version = "1.0.0-alpha"
+description = "Raven — CLI agent that connects any OpenAI-compatible LLM backend (Ollama, LM Studio, OpenRouter, NVIDIA NIM, custom) to passive OSINT/threat-intel skills, with visible multi-source reasoning. Includes advanced command system, target management, session tracking, multi-source IP lookup, self-reflection, and system tools."
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31",
+    "pyyaml>=6.0",
+    "rich>=13.7",
+    "click>=8.1",
+    "python-whois>=0.9.4",
+    "dnspython>=2.6",
+    "beautifulsoup4>=4.12",
+    "ddgs>=6.0",
+    "sqlalchemy>=2.0",
+    "psutil>=5.9.0",
+    "prompt-toolkit>=3.0.43",
+]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.45"]
+
+[project.scripts]
+raven = "raven.cli:cli"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = {find = {include = ["raven*"]}}

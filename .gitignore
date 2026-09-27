@@ -1,0 +1,39 @@
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+.raven/
+.raven_sessions/
+.raven_undo/
+.raven_snapshots/
+config.json
+settings.yaml
+
+# Python environments and generated files
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Packaging output
+build/
+dist/
+*.egg-info/
+
+# Local investigation and workspace data
+targets/
+workspace/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

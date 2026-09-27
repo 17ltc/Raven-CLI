@@ -1,0 +1,11 @@
+requests>=2.31
+pyyaml>=6.0
+rich>=13.7
+click>=8.1
+python-whois>=0.9.4
+dnspython>=2.6
+beautifulsoup4>=4.12
+ddgs>=6.0
+sqlalchemy>=2.0
+# optionnel: pip install playwright && playwright install chromium
+# playwright>=1.45
