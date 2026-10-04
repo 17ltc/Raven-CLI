@@ -1,0 +1,32 @@
+{
+  "name": "raven-cli-js",
+  "version": "1.2.1",
+  "description": "A focused terminal agent for software projects, automation, and defensive research.",
+  "license": "MIT",
+  "bin": {
+    "raven": "./bin/raven.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0",
+    "commander": "^12.1.0",
+    "diff": "^5.2.0",
+    "js-yaml": "^4.1.0"
+  },
+  "optionalDependencies": {
+    "better-sqlite3": "^11.3.0",
+    "discord.js": "^14.16.3",
+    "mysql2": "^3.11.3",
+    "pg": "^8.13.0",
+    "playwright": "^1.47.0",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "postinstall": "node scripts/postinstall.js",
+    "setup": "node bin/raven.js setup"
+  }
+}

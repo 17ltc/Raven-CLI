@@ -54,7 +54,10 @@ When file operations are available, you can:
 
 ### Raven project tools
 
-Use the scoped project tools for repository work. They operate inside the configured workspace and avoid dependency/generated directories.
+Use the scoped project tools for repository work. They operate directly inside
+the configured workspace. Do not create `workspace/`, `raven/`, `targets/`, or
+other wrapper directories unless the user explicitly requests that structure or
+the task genuinely requires it.
 
 - `project_inspect {}`: inspect the root, file count, extensions, and shallow tree before planning.
 - `project_tree {max_depth?}`: list the project tree without dumping file contents.
